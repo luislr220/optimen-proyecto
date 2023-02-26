@@ -1,0 +1,96 @@
+.ContactForm{
+    background-color: #a8a8a8;
+}
+
+
+.contact_form{  
+  width: 50%;  
+  background-color: #20274c; 
+  padding-left: 30px;
+}
+.colocar_nombre{
+    color: #a8a8a8;
+}
+
+.colocar_mensaje{
+    color: #a8a8a8;
+}
+
+.h1C{
+    background-color: #181e3d;
+    text-align: center;
+    color: #a8a8a8;
+    height: 100px;
+    padding-top: 2%;
+}
+
+input{
+    background-color: #20274c;
+  width: 90%; 
+  height: 40px;  
+  border-style: solid; 
+  border-width: 2px; 
+  border-color: #0e0e0e; 
+
+}
+
+
+textarea{
+  background-color: #20274c; 
+  border-color: #0e0e0e;
+  width: 90%; 
+  height: 150px;  
+  border-style: solid; 
+  border-width: 2px; 
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+button{
+  background-color: #273582; 
+  border-style: solid;  
+  width: 100px; 
+  cursor: pointer;
+}
+
+
+button p{
+  color: #fff; 
+}
+
+.Pc{
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+.Pc2{
+    font-size: 14px; 
+    color: #a8a8a8; 
+}
+
+.PcFooter{
+    font-size: 14px; 
+    color: #a8a8a8;
+    padding: 3%;
+}
+
+.foo{
+    background-color: #2459af;
+    margin-top: .5%;
+    display: flex;
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}

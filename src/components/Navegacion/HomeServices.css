@@ -1,0 +1,50 @@
+.HomeSer{
+    background-image: url(https://img.freepik.com/vector-premium/fondo-moderno-lujo-forma-geometrica-vector-tema-color-azul-marino-oscuro-premium_13125-230.jpg);
+    display: flex;
+}
+
+.Aworld{
+    padding: 3%;
+    color: aliceblue;
+    width: 50%;
+}
+.textS{
+    color: #a8a8a8;
+    font-weight: bolder;
+}
+
+.textSP{
+    color: #a8a8a8;
+}
+
+.card{
+    width: 35rem;
+    font-weight: bolder;
+    font-size: x-large;
+    background-color: #518ceb;
+    text-align: center;
+    float: right;
+}
+
+.pad{
+    padding-bottom: 10%;
+    padding-right: 7%;
+    padding-top: 2%;
+    
+}
+
+.list-group{
+    background-color: #518ceb;
+    text-align: center;
+}
+
+.fondoCard{
+    width: 50%;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/007/497/025/non_2x/navy-blue-background-with-stripes-and-copy-space-free-vector.jpg);
+}
+
+.textservicesh1{
+    text-align: center;
+    color: #a8a8a8;
+    padding-top: 2%;
+}
