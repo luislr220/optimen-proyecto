@@ -1,15 +1,10 @@
+body{
+    background-color: #20274c;
+}
+
 .tituloPart{
     text-align: center;
-}
-
-
-#carouselExampleRide{
-    left: 10%;
-}
-
-.CarruselXd{
-    display: flex;
-
+    color: #a8a8a8;
 }
 
 
@@ -17,4 +12,8 @@
 margin: 0 auto;
 margin-top: 100px;
 width: 480px;
+}
+
+.padre{
+    overflow: hidden;
 }

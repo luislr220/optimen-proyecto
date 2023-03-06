@@ -1,0 +1,34 @@
+.News{
+    background-color: aliceblue;
+    flex: 1;
+    max-width: 50%;
+    padding: 3%;
+    
+}
+
+.NewsNoticias{
+    border-bottom: 1px solid #000000;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.Titulo{
+    text-align: center;
+}
+
+.padreNews{
+    display: flex;
+    padding: 3%;
+}
+
+.imgNews{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.linea-vertical {
+    border-left: 2px solid #ccc;
+    height: 100%;
+    margin: 10px;
+  }
