@@ -28,65 +28,65 @@ export default class HomeServices extends Component {
           </div>
 
           <div className='fondoCard'>
-                <div>
-                  <h1 className='textservicesh1'>Services</h1>
-                  <div className='pad'>
-                    <div class="card">
-                      <ul>
-                        <li class="list-group-item">Consultancy</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>  
-                <div>
-                  <div className='pad'>
-                    <div class="card">
-                      <ul>
-                        <li class="list-group-item">Auditing</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div> 
-                <div>
-                  <div className='pad'>
-                    <div class="card">
-                      <ul>
-                        <li class="list-group-item">Business Rules Development</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div> 
-                <div>
-                  <div className='pad'>
-                    <div class="card">
-                      <ul>
-                        <li class="list-group-item">Implementation Outsorsing</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div> 
-                <div>
-                  <div className='pad'>
-                    <div class="card">
-                      <ul>
-                        <li class="list-group-item">Innovation</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div> 
-                <div>
-                  <div className='pad'>
-                    <div class="card">
-                      <ul>
-                        <li class="list-group-item">Interfaces Development</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div> 
+          <h1 className='textservicesh1'>Services</h1>
+            <div className='pad'>
+              <div>
+                <div class="card">
+                  <ul>
+                    <li class="list-group-item">Consultancy</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className='pad'>
+              <div>
+                <div class="card">
+                  <ul>
+                    <li class="list-group-item">Auditing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className='pad'>
+              <div>
+                <div class="card">
+                  <ul>
+                    <li class="list-group-item">Business Rules Development</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className='pad'>
+              <div>
+                <div class="card">
+                  <ul>
+                    <li class="list-group-item">Implementation Outsorsing</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className='pad'>
+              <div>
+                <div class="card">
+                  <ul>
+                    <li class="list-group-item">Innovation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className='pad'>
+              <div>
+                <div class="card">
+                  <ul>
+                    <li class="list-group-item">Interfaces Development</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      
+
     )
   }
 }

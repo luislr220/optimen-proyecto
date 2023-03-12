@@ -1,15 +1,13 @@
-
-
 .slick-dots li button:before {
     color: #fff;
 }
-  
+
 .slick-dots li.slick-active button:before {
     color: #000;
 }
 
 
-.slick-arrow_prev{
+.slick-arrow_prev {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -23,7 +21,7 @@
     transition: background-color 0.3s ease;
 }
 
-.slick-arrow_next{
+.slick-arrow_next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -38,17 +36,17 @@
 
 .slick-arrow:hover {
     background-color: #f1f1f1;
-  }
-  
+}
+
 .slick-arrow_prev {
     left: -40px;
 }
-  
+
 .slick-arrow_next {
     right: -40px;
 }
 
-.prev{
+.prev {
     left: -2px;
 
     position: absolute;
@@ -63,7 +61,7 @@
     transition: background-color 0.3s ease;
 }
 
-.next{
+.next {
     right: -2px;
 
 
@@ -79,18 +77,12 @@
     transition: background-color 0.3s ease;
 }
 
-.carruIMG{
-    width: 450px;
-    height: 350px;
-    padding: 32%;
-    border-radius: 80px;
+.carruIMG {
+    width: 94%;
+    height: 130px;
 }
 
-.carousel-wrapper{
-    overflow: hidden;
+.carousel-wrapper {
     background-image: url(https://img.freepik.com/vector-premium/fondo-moderno-lujo-forma-geometrica-vector-tema-color-azul-marino-oscuro-premium_13125-230.jpg);
-}
-
-.c{
-    padding: 4%;
+    padding: 5%;
 }
