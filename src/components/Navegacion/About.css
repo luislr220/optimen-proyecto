@@ -1,0 +1,157 @@
+.header {
+    background-color: #20274c;
+    
+  }
+  
+  .h1C {
+    background-color: #181e3d;
+    text-align: left;
+    color: #a8a8a8;
+    height: 150px;
+    padding-top: 2%;
+    font-size: 35px;
+    text-shadow: #a8a8a8;
+  }
+   p.box0{
+    background-color: #181e3d;
+    text-align: left;
+    color: #a8a8a8;
+    padding-top: 2%;
+    font-size: 23px;
+    text-shadow: #a8a8a8;
+   }
+  
+  .title {
+  
+    width: 80px;
+    margin: 5px 80px;
+    padding: 10px;
+    font-size: italic;
+    background-color: #181e3d;
+    color: #f7eeee;
+  }
+  
+  
+  p.box1 {
+    width: 150px;
+    border-radius: 35px 0px 35px 0px;
+    padding: 10px;
+    font-size: italic;
+    background-color: #181e3d;
+    color: #f7eeee;
+  }
+  
+  p.box2 {
+    width: 150px;
+    border-radius: 35px 0px 35px 0px;
+    padding: 10px;
+    font-size: italic;
+    background-color: #181e3d;
+    color: #f7eeee;
+  }
+  
+  .purpo {
+    width: 80px;
+    margin: 10px 50px;
+    padding: 150px;
+    font-size: italic;
+    background-color: #181e3d;
+    color: #f7eeee;
+    font-size: 40px;
+  
+  }
+  
+  
+  .body {
+    display: flex;
+  }
+  
+  input {
+    background-color: #20274c;
+    width: 90%;
+    height: 70px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #0e0e0e;
+    text-size-adjust: inherit;
+    font-size: 15px;
+  
+  
+  
+  }
+  
+  
+  textarea {
+    background-color: #20274c;
+    border-color: #0e0e0e;
+    width: 90%;
+    height: 150px;
+    border-style: solid;
+    border-width: 2px;
+  
+  }
+  
+  
+  label {
+    display: block;
+    float: center;
+  }
+  
+  
+  button {
+    background-color: #273582;
+    border-style: solid;
+    width: 100px;
+    cursor: pointer;
+  }
+  
+  
+  
+  .PcFooter {
+    font-size: 14px;
+    color: #a8a8a8;
+    padding: 3%;
+  }
+  
+  .foo {
+    background-color: #2459af;
+    margin-top: .5%;
+    display: flex;
+  }
+  
+  
+  .container {
+    display: flex;
+  }
+  
+  .container img {
+    margin-right: 10px; /* espacio entre las imágenes */
+    
+  }
+  
+  .fechas {
+    width: 70px;
+    margin: 30px 70px;
+    padding-inline-end: 80px;
+    font-size: italic;
+    background-color: #29b1b8;
+    font-size: 20px;
+    display: flex;
+    margin-right: 10px;
+  
+  }
+  
+  
+  .recuadro {
+    border: 0px solid black;
+    padding: 10px;
+    width: 200px;
+    display: inline-block;
+    margin-right: 5px;
+    background-color: #29b1b8 ;
+    margin: 20px 30px;
+    border-radius: 35px 35px 35px 35px;
+    
+  }
+
+  

@@ -8,6 +8,8 @@ import ContactUs from './components/Navegacion/ContactUs';
 import News from './components/Navegacion/News';
 import Services from './components/Navegacion/Services';
 import Inovation from './components/Navegacion/Inovation'
+import About from './components/Navegacion/About';
+
 
 
 function App() {
@@ -20,6 +22,7 @@ function App() {
           <Route path='/Services' element={<Services/>}/>
           <Route path='/News' element={<News/>}/>
           <Route path='/Inovation' element={<Inovation/>}/>
+          <Route path='/About' element={<About/>}/>
         </Route>
       </Routes>
     </div>
