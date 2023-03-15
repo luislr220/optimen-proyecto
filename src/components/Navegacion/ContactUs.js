@@ -8,13 +8,7 @@ export default class ContactUs extends Component {
         <h1 className='h1C'>Contact Us</h1>
         <div className='ContactForm'>
           <div className="contact_form">
-            <div>
-            <p className='Pc2'>Av. León 119. <br/>
-              León Guanajuato<br/>
-              Mexico<br/>
-              info@optimen.com.mx<br/>
-            </p>
-            </div>
+            
             <div className="formulario">
               <form>       
                 <p className='Pc'>
