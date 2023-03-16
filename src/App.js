@@ -9,7 +9,7 @@ import News from './components/Navegacion/News';
 import Services from './components/Navegacion/Services';
 import Inovation from './components/Navegacion/Inovation'
 import About from './components/Navegacion/About';
-
+import Customers from './components/Navegacion/Customers'
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
           <Route path='/News' element={<News/>}/>
           <Route path='/Inovation' element={<Inovation/>}/>
           <Route path='/About' element={<About/>}/>
+          <Route path='/Customers' element={<Customers/>}/>
         </Route>
       </Routes>
     </div>

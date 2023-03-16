@@ -55,6 +55,7 @@ export default class About extends Component {
           </div>
         </div>
         <div classname="body">
+                              <p class="Tp">Our Story Through the Time</p>
           <div class="recuadro">
             <p>The beginning</p>
           </div>

@@ -16,7 +16,7 @@
     background-color: #181e3d;
     text-align: left;
     color: #a8a8a8;
-    padding-top: 2%;
+    padding-inline: 2%;
     font-size: 23px;
     text-shadow: #a8a8a8;
    }
@@ -25,6 +25,7 @@
   
     width: 80px;
     margin: 5px 80px;
+    border-radius: 35px 0px 35px 0px;
     padding: 10px;
     font-size: italic;
     background-color: #181e3d;
@@ -53,17 +54,27 @@
   .purpo {
     width: 80px;
     margin: 10px 50px;
+    border-radius: 35px 35px 35px 35px;
     padding: 150px;
     font-size: italic;
     background-color: #181e3d;
     color: #f7eeee;
     font-size: 40px;
+    
   
+  }
+  p.Tp{
+    color: #f7eeee;
+    font-size: 40px;
+    font-size: italic;
+    margin-inline: 30%;
   }
   
   
   .body {
     display: flex;
+    margin-top: 4%;
+    margin-inline: 5%;
   }
   
   input {
@@ -151,6 +162,7 @@
     background-color: #29b1b8 ;
     margin: 20px 30px;
     border-radius: 35px 35px 35px 35px;
+    margin-inline: 3%;
     
   }
 
