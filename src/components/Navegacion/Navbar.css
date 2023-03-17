@@ -27,3 +27,8 @@
     margin: 3px;
     flex-direction: column;
 }
+
+.navbar-nav {
+    flex-direction: column;
+    margin-top: 70px;
+}
