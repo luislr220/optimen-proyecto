@@ -1,24 +1,26 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Partnerships.css';
 import Carousel from './Carousel';
+import {useTranslation} from 'react-i18next';
 
 
-export default class Partnerships extends Component {
-  render() {
-    
-    return (
-      <div  className='padre'>
+export default function Partnerships () {
 
-        <div>
+  const [t] = useTranslation("global");
+
+  return (
+    <div className='padre'>
+
+      <div>
         <h1 className='tituloPart'>
-          Partnerships and Affiliations
+        {t("navbar.Partnership")}
         </h1>
-        
-          <Carousel/>
-        </div>
 
+        <Carousel />
       </div>
 
-    )
-  }
+    </div>
+
+  )
 }
+

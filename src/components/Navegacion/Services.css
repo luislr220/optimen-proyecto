@@ -2,13 +2,10 @@
     color: #a8a8a8;
     height: 25vh;
     display: flex;
-    justify-content: center;
+    padding-left: 2%;
     align-items: center;
-    padding-right: 78%;
     background-image: url(https://img.freepik.com/vector-premium/fondo-moderno-lujo-forma-geometrica-vector-tema-color-azul-marino-oscuro-premium_13125-230.jpg);
 }
-
-
 
 .services-container {
     display: flex;

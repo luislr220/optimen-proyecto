@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Services.css';
 
 /**IMAGENES */
@@ -8,14 +8,17 @@ import buss from '../../img/ourServices/buss.png';
 import implementation from '../../img/ourServices/implementation.png';
 import innovation from '../../img/ourServices/innovation.png';
 import interfaces from '../../img/ourServices/interfaces.png';
+import {useTranslation} from 'react-i18next';
 
-export default class Services extends Component {
-  render() {
+export default function Services () {
+
+  const [t] = useTranslation("global");
+   
     return (
       <div>
         <div className='ftServices'>
           <h1>
-            Our Services
+            {t("navbar.Our-Services")}
           </h1>
         </div>
 
@@ -26,8 +29,8 @@ export default class Services extends Component {
               <img src={consultancy} alt='Service 1' />
               <div className='service-text-container'>
                 <div className='service-text'>
-                  <h3>Consultancy</h3>
-                  <p>Consultancy Services</p>
+                  <h3>{t("navbar.Consultancy")}</h3>
+                  <p>{t("navbar.Consultancy-Services")}</p>
                 </div>
               </div>
             </div>
@@ -36,8 +39,8 @@ export default class Services extends Component {
               <img src={auditing} alt='Service 2' />
               <div className='service-text-container'>
                 <div className='service-text'>
-                  <h3>Auditing</h3>
-                  <p>Auditing and procces improvement</p>
+                  <h3>{t("navbar.Auditing")}</h3>
+                  <p>{t("navbar.Auditing-and")}</p>
                 </div>
               </div>
             </div>
@@ -46,9 +49,8 @@ export default class Services extends Component {
               <img src={buss} alt='Service 3' />
               <div className='service-text-container'>
                 <div className='service-text'>
-                  <h3>
-                    Business Rules Development</h3>
-                  <p>Development of business rules for resource management</p>
+                  <h3>{t("navbar.Business")}</h3>
+                  <p>{t("navbar.Development-of")}</p>
                 </div>
               </div>
             </div>
@@ -57,9 +59,8 @@ export default class Services extends Component {
               <img src={implementation} alt='Service 3' />
               <div className='service-text-container'>
                 <div className='service-text'>
-                  <h3>
-                  Implementation Outsorsing</h3>
-                  <p>Implement Aircraft and Crew Tracking Systems and Optimizers</p>
+                  <h3>{t("navbar.Implementation")}</h3>
+                  <p>{t("navbar.Implement-Aircraft")}</p>
                 </div>
               </div>
             </div>
@@ -68,9 +69,8 @@ export default class Services extends Component {
               <img src={innovation} alt='Service 3' />
               <div className='service-text-container'>
                 <div className='service-text'>
-                  <h3>
-                  Innovation</h3>
-                  <p>Innovation and Development of new systems </p>
+                  <h3>{t("navbar.Innovation")}</h3>
+                  <p>{t("navbar.Innovation-and")}</p>
                 </div>
               </div>
             </div>
@@ -79,9 +79,8 @@ export default class Services extends Component {
               <img src={interfaces} alt='Service 3' />
               <div className='service-text-container'>
                 <div className='service-text'>
-                  <h3>
-                  Interfaces Development</h3>
-                  <p>Development of Integrations / Interfaces for computer systems</p>
+                  <h3>{t("navbar.Interfaces")}</h3>
+                  <p>{t("navbar.Development")}</p>
                 </div>
               </div>
             </div>
@@ -100,4 +99,3 @@ export default class Services extends Component {
       </div>
     )
   }
-}

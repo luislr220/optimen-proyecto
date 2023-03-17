@@ -1,92 +1,90 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './HomeServices.css';
 
+import { useTranslation } from 'react-i18next';
 
-export default class HomeServices extends Component {
-  render() {
-    return (
 
-      <div>
-        <div className='HomeSer'>
-          <div className='Aworld'>
+export default function HomeServices() {
+  const [t] = useTranslation("global");
+
+  return (
+    <div>
+      <div className='HomeSer'>
+        <div className='Aworld'>
+          <div>
             <div>
               <div>
-                <div>
-                  <h1 className='textS'>A World Class Global Enterprise</h1>
-                </div>
+                <h1 className='textS'>{t("navbar.A-world")}</h1>
               </div>
+            </div>
 
-              <div>
-                <p className='textSP'>
-                  Mexican Company with the following experience since 2006:
-                  Resource Optimization
-                  Consultancy and Configuration Support Services
-                  IT Software Solutions Development
-                </p>
+            <div>
+              <p className='textSP'>
+                {t("navbar.Mexican")}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className='fondoCard'>
+          <h1 className='textservicesh1'>{t("navbar.servicesC_H")}</h1>
+          <div className='pad'>
+            <div>
+              <div class="card">
+                <ul>
+                  <li class="list-group-item">{t("navbar.Consultancy")}</li>
+                </ul>
               </div>
             </div>
           </div>
-
-          <div className='fondoCard'>
-          <h1 className='textservicesh1'>Services</h1>
-            <div className='pad'>
-              <div>
-                <div class="card">
-                  <ul>
-                    <li class="list-group-item">Consultancy</li>
-                  </ul>
-                </div>
+          <div className='pad'>
+            <div>
+              <div class="card">
+                <ul>
+                  <li class="list-group-item">{t("navbar.Auditing")}</li>
+                </ul>
               </div>
             </div>
-            <div className='pad'>
-              <div>
-                <div class="card">
-                  <ul>
-                    <li class="list-group-item">Auditing</li>
-                  </ul>
-                </div>
+          </div>
+          <div className='pad'>
+            <div>
+              <div class="card">
+                <ul>
+                  <li class="list-group-item">{t("navbar.Business")}</li>
+                </ul>
               </div>
             </div>
-            <div className='pad'>
-              <div>
-                <div class="card">
-                  <ul>
-                    <li class="list-group-item">Business Rules Development</li>
-                  </ul>
-                </div>
+          </div>
+          <div className='pad'>
+            <div>
+              <div class="card">
+                <ul>
+                  <li class="list-group-item">{t("navbar.Implementation")}</li>
+                </ul>
               </div>
             </div>
-            <div className='pad'>
-              <div>
-                <div class="card">
-                  <ul>
-                    <li class="list-group-item">Implementation Outsorsing</li>
-                  </ul>
-                </div>
+          </div>
+          <div className='pad'>
+            <div>
+              <div class="card">
+                <ul>
+                  <li class="list-group-item">{t("navbar.Innovation")}</li>
+                </ul>
               </div>
             </div>
-            <div className='pad'>
-              <div>
-                <div class="card">
-                  <ul>
-                    <li class="list-group-item">Innovation</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className='pad'>
-              <div>
-                <div class="card">
-                  <ul>
-                    <li class="list-group-item">Interfaces Development</li>
-                  </ul>
-                </div>
+          </div>
+          <div className='pad'>
+            <div>
+              <div class="card">
+                <ul>
+                  <li class="list-group-item">{t("navbar.Interfaces")}</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-    )
-  }
+  )
 }

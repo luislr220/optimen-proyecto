@@ -13,7 +13,6 @@
     text-shadow: #a8a8a8;
   }
    p.box0{
-    background-color: #181e3d;
     text-align: left;
     color: #a8a8a8;
     padding-inline: 2%;
@@ -66,12 +65,12 @@
   p.Tp{
     color: #f7eeee;
     font-size: 40px;
-    font-size: italic;
     margin-inline: 30%;
   }
   
   
-  .body {
+  .bodyT {
+    background-color: #2e3d5b;
     display: flex;
     margin-top: 4%;
     margin-inline: 5%;
@@ -90,32 +89,6 @@
   
   
   }
-  
-  
-  textarea {
-    background-color: #20274c;
-    border-color: #0e0e0e;
-    width: 90%;
-    height: 150px;
-    border-style: solid;
-    border-width: 2px;
-  
-  }
-  
-  
-  label {
-    display: block;
-    float: center;
-  }
-  
-  
-  button {
-    background-color: #273582;
-    border-style: solid;
-    width: 100px;
-    cursor: pointer;
-  }
-  
   
   
   .PcFooter {

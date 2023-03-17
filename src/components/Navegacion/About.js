@@ -1,63 +1,61 @@
-import React, { Component } from "react";
+import React from "react";
 import "./About.css";
 import Carousel from './Carousel';
+import {useTranslation} from 'react-i18next'
 
 
-export default class About extends Component {
-  render() {
+export default function About () {
+
+  const [t] = useTranslation("global");
+
     return (
       <div className="header">
         <h1 className="h1C">
-          What is Optimen?
+          {t("navbar.What-is-Optimen?")}
           <p class="box0">
-            Optimen is a Mexican Software Development company that provides
-            resources management and optimization services to different
-            industries. The company was designated and approved as an
-            International Service Contractor for Jeppesen and Boeing.
+          {t("navbar.What-is-Optimen?_P")}
           </p>
         </h1>
 
-        <div className="body">
+        <div className="bodyT">
           <div>
-            <p className="purpo"> Our Purpose</p>
+            <p className="purpo"> {t("navbar.Our-Purpose")}</p>
           </div>
           <div>
-            <p className="title"> Mission</p>
+            <p className="title"> {t("navbar.Mission")}</p>
 
             <p class="box1">
-              Support and facilitate Air Lines around the world to maintain
-              reliable and sustainable operations through Technology, Innovation
-              and living our Values.
+            {t("navbar.Mission_P")}
             </p>
           </div>
 
           <div>
-            <p className="title"> Vision</p>
+            <p className="title">{t("navbar.Vision")}</p>
             <p class="box1">
-              To be the First option in Software, Technology and Innovation
-              services for the global Airlines in the area of Aeronautical
-              operational control.
+            {t("navbar.Vision_P")}
             </p>
           </div>
           <div>
-            <p className="title"> Values</p>
+            <p className="title"> {t("navbar.Values")}</p>
             <p class="box1">
-              Trustworthy Respect Integrity Teamwork Innovation
+            {t("navbar.Values_P")}
             </p>
           </div>
         </div>
+
         <div className="container">
           <div className="padre">
             <div>
-              <h1 className="tituloPart">Airline Experience</h1>
+              <h1 className="tituloPart">{t("navbar.Airline-Experience")}</h1>
               <Carousel />
             </div>
           </div>
         </div>
-        <div classname="body">
-                              <p class="Tp">Our Story Through the Time</p>
+
+        <div classname="bodyT">
+          <p class="Tp">{t("navbar.Our-Story-Through-the-Time")}</p>
           <div class="recuadro">
-            <p>The beginning</p>
+            <p>{t("navbar.The-beginning")}</p>
           </div>
           <div class="recuadro">
             <p>2009</p>
@@ -87,4 +85,3 @@ export default class About extends Component {
       </div>
     );
   }
-}

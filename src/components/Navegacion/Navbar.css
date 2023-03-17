@@ -1,13 +1,29 @@
-.navbar{
+.navbar {
     background: #2459af;
-    
+
 }
 
-.nav-link{
+.nav-link {
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.left{
+.left {
     padding-left: 2%;
+}
+
+.Traductor {
+    padding-top: 4%;
+    padding-left: .5%;
+    position: fixed;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Traductor img {
+    width: 20px;
+    margin: 3px;
+    flex-direction: column;
 }

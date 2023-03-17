@@ -1,27 +1,27 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Customers.css";
 import Carousel from './Carousel';
+import {useTranslation} from 'react-i18next'
 
 
-export default class Customers extends Component {
-  render() {
+export default function Customers () {
+
+  const [t] = useTranslation("global");
+
     return (
       <div className="header">
         <h1 className="titleC">
-        Our Customers
+        {t("navbar.Our-Customers")}
           <p class="textC">
-          Through our capabilities, the services we provide, and our commitment, 
-          we implement projects resulting in satisfied clients and success stories.
-          </p>
+          {t("navbar.Our-Customers_P")}</p>
         </h1>
         <div className="CBody" >
           <Carousel/>
         </div>
         <h1 className="titleC">
-        Our Project Experience
+        {t("navbar.Our-Project-Experience")}
           <p class="textC">
-          Through our experience as certified Jeppesen/Boeing consultants, we contribute to the support of the configuration and customization of state-of-the-art optimization software for several key airlines in the aeronautical sector at an international level.
-          </p>
+          {t("navbar.Our-Project-Experience_P")} </p>
         </h1>
         <div className="CBody" >
           <Carousel/>
@@ -40,4 +40,3 @@ export default class Customers extends Component {
       </div>
     );
   }
-}
