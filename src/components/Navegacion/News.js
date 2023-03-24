@@ -1,60 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './News.css';
-import { useTranslation } from 'react-i18next'
-
-/**IMAGENES PARA LAS NOTICIAS */
-import clusterAero from '../../img/news/clusterAero.jpg';
-import aniversario from '../../img/news/aniversario.jpeg'
+import CommentForm from './CommentForm';
 
 export default function News() {
+  const [news, setNews] = useState([]);
 
-  const [t] = useTranslation("global");
+  // Definimos fetchData fuera del hook useEffect
+  const fetchData = async () => {
+    const response = await fetch('http://localhost:3002/news');
+    const data = await response.json();
+    setNews(data);
+  };
 
-  const noticias = [
-    {
-      id: 1,
-      titulo: <h1>{t("navbar.titulo")}</h1>,
-      descripcion: <p>{t("navbar.descripcion")}</p>,
-      imagen: clusterAero,
-      fecha: "Oct 31, 2020",
-    },
-  ];
-  const noticias2 = [
-    {
-      id: 1,
-      titulo: <h1>{t("navbar.titulo2")}</h1>,
-      descripcion: <p>{t("navbar.descripcion2")}</p>,
-      imagen: aniversario,
-      fecha: "Oct 19, 2020",
-    },
-  ];
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <div>
       <div className='padreNews'>
-        <div className='News'>
-          {noticias.map((noticia) => (
-            <div key={noticia.id} className='NewsNoticias'>
-              <h2 className='Titulo'>{noticia.titulo} </h2>
-              <img src={noticia.imagen} alt={noticia.titulo} className='imgNews' />
-              <p>{noticia.descripcion}</p>
-              <p>{noticia.fecha}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="linea-vertical" />
-
-        <div className='News'>
-          {noticias2.map((noticia) => (
-            <div key={noticia.id} className='NewsNoticias'>
-              <h2 className='Titulo'>{noticia.titulo}</h2>
-              <img src={noticia.imagen} alt={noticia.titulo} className='imgNews' />
-              <p>{noticia.descripcion}</p>
-              <p>{noticia.fecha}</p>
-            </div>
-          ))}
-        </div>
+        {news.map((noticia, notica) => (
+          <div key={noticia._id} className= "NewsContainer">
+            <h2 className='Titulo'>{noticia.title} </h2>
+            <img src={noticia.images} alt={noticia.title} className='imgNews' />
+            <p>{noticia.content}</p>
+            <p>{noticia.date}</p>
+            <CommentForm newsId={noticia._id} updateComments={fetchData} />
+            <div className='linea-horizontal'></div>
+          </div>
+        ))}
       </div>
 
       <footer className='foo'>
