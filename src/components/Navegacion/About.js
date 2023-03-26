@@ -54,19 +54,19 @@ export default function About () {
 
         <div classname="bodyT">
           <p class="Tp">{t("navbar.Our-Story-Through-the-Time")}</p>
-          <div class="recuadro">
+          <div class="recuadros">
             <p>{t("navbar.The-beginning")}</p>
           </div>
-          <div class="recuadro">
+          <div class="recuadros">
             <p>2009</p>
           </div>
-          <div class="recuadro">
+          <div class="recuadros">
             <p>2014</p>
           </div>
-          <div class="recuadro">
+          <div class="recuadros">
             <p>2016</p>
           </div>
-          <div class="recuadro">
+          <div class="recuadros">
             <p>2017</p>
           </div>
         </div>
