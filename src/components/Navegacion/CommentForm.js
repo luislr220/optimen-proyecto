@@ -1,61 +1,45 @@
 import React, { useState } from 'react';
-
-export default function CommentForm(props) {
+import './CommentForm.css'
+function CommentForm() {
   const [comment, setComment] = useState('');
 
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:3002/news/${props.newsId}`, {
+      const response = await fetch('http://localhost:3002/comment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({
-          comment: comment
-        })
+        body: JSON.stringify({ comment })
       });
 
-      if (!response.ok) {
-        const error = await response.text();
-        throw new Error(error || 'Error desconocido');
+      if (response.ok) {
+        console.log('Comentario guardado exitosamente');
+        setComment('');
+      } else {
+        console.error('Error al guardar el comentario');
       }
-
-      const contentType = response.headers.get('content-type');
-      if (!contentType || !contentType.includes('application/json')) {
-        throw new TypeError("La respuesta recibida no es JSON");
-      }
-
-      const data = await response.json();
-
-      console.log(data);
-
-      // Actualizar los comentarios después de enviar uno nuevo
-      props.updateComments();
     } catch (error) {
       console.error(error);
-      alert('Hubo un error al enviar el comentario');
     }
   };
 
   return (
-    <div className='CommentFormContainer'>
-      <h3 className='CommentFormTitle'>Deja tu comentario</h3>
-
-      <form className='CommentForm' onSubmit={handleSubmit}>
-
-        <div className='CommentFormField'>
-          <label htmlFor='comment'>Comentario:</label>
-          <textarea
-            id='comment'
-            value={comment}
-            onChange={(event) => setComment(event.target.value)}
-          ></textarea>
-        </div>
-
-        <button type='submit'>Enviar</button>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit}>
+      <div className='Comentarios'>
+        <label htmlFor="comment">Comentario:</label>
+        <input
+          type="text"
+          id="comment"
+          value={comment}
+          onChange={(event) => setComment(event.target.value)}
+        />
+      </div>
+      <button type="submit" class="btn btn-success">Guardar comentario</button>
+    </form>
   );
 }
+
+export default CommentForm;

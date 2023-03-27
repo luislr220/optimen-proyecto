@@ -5,11 +5,14 @@ import CommentForm from './CommentForm';
 export default function News() {
   const [news, setNews] = useState([]);
 
-  // Definimos fetchData fuera del hook useEffect
   const fetchData = async () => {
-    const response = await fetch('http://localhost:3002/news');
-    const data = await response.json();
-    setNews(data);
+    try {
+      const response = await fetch('http://localhost:3002/news');
+      const data = await response.json();
+      setNews(data);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   useEffect(() => {
@@ -19,13 +22,13 @@ export default function News() {
   return (
     <div>
       <div className='padreNews'>
-        {news.map((noticia, notica) => (
-          <div key={noticia._id} className= "NewsContainer">
+        {news.map((noticia) => (
+          <div key={noticia._id} className='NewsContainer'>
             <h2 className='Titulo'>{noticia.title} </h2>
             <img src={noticia.images} alt={noticia.title} className='imgNews' />
             <p>{noticia.content}</p>
             <p>{noticia.date}</p>
-            <CommentForm newsId={noticia._id} updateComments={fetchData} />
+            <CommentForm/>
             <div className='linea-horizontal'></div>
           </div>
         ))}
@@ -40,5 +43,5 @@ export default function News() {
         </p>
       </footer>
     </div>
-  )
+  );
 }
