@@ -1,7 +1,19 @@
 .header {
     background-color: #20274c;
     
+    
   }
+
+
+  @media only screen and (max-width: 768px) {
+    .titleC {
+      font-size: 24px;
+    }
+    .textC {
+      font-size: 16px;
+    }
+  }
+  
   .titleC {
     
     text-align: center;
@@ -10,21 +22,28 @@
     padding-top: 2%;
     font-size: 45px;
     text-shadow: #a8a8a8;
-    margin-inline: 30%;
+    
   }
    p.textC{
     
     text-align: center;
     color: #a8a8a8;
-    padding-inline: 2%;
+    padding-bottom: 20%;
     font-size: 18px;
     text-shadow: #a8a8a8;
     margin-block-start: 1%;
-   
+    
    }
 
    
    .CBody{
-    padding-top: 9%;
-    padding-bottom: 3%;
+    position: absolute; /* add position absolute to remove the carousel from the normal flow */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* set a lower z-index value than the text */
+    padding-top: 2%;
+    position: relative;
+    
    }
